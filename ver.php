@@ -4,7 +4,7 @@
 
 <?php    
     
-   // $nombre = $_SESSION['usuario'];    
+    $nombre = $_SESSION['usuario'];    
     $servidor = "localhost";
     $usuarioBD = "root";
     $pwdBD = "xd";
