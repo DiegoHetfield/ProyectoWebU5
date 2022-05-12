@@ -53,9 +53,12 @@
                 <div class="card-body">
 
                     <img class="" src=" <?php echo $row['imagen']; ?>" alt="Card image cap" width="25%" height="25%">
+                    <p><b>Autor:</b></p>
                     <p class="card-text"><?php echo $row['nombre'] ?></p> 
                     <p class="card-text"><?php echo $row['apellido']; ?></p>
+                    <p><b>categoria</b></p>
                     <p class="card-text"><?php echo $row['categoria']; ?></p>
+                    <p><b>Subcategoria</b></p>
                     <p class="card-text"><?php echo $row['subcategoria']; ?></p>
 
                     <a href="verArticulos.php" class="btn btn-primary">Ver articulo</a>
