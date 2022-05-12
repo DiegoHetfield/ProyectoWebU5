@@ -4,13 +4,17 @@
 
 <?php    
     
-    $nombre = $_SESSION['usuario'];    
+   // $nombre = $_SESSION['usuario'];    
     $servidor = "localhost";
     $usuarioBD = "root";
     $pwdBD = "xd";
     $nomBD = "proyectowebu5";    
     $db = new mysqli($servidor,$usuarioBD,$pwdBD,$nomBD);     
-    $query = mysqli_query($db, "select nombre, apellido from usuarios where rol='escritor'");    
+    $query = mysqli_query($db, "
+    select u.nombre, u.apellido,u.imagen, a.categoria, a.subcategoria 
+    from usuarios u join articulos a 
+    on u.id_usuario = a.id_usuario
+    where rol='escritor';");    
     
 ?>
 
@@ -18,7 +22,7 @@
 <html lang="es">
 
 <head>
-    <title>Rome Blog</title>
+    <title>ESCRITORES</title>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,20 +42,26 @@
     </div>
 
     <div id="contenedorPrincipal">
-        
+
+     
         <?php
             $i = 0;
             while ($row = mysqli_fetch_array($query)) {
                 ?>            
                 
-            <div id="cartas" class="card">
-                
+            <div id="cartas" class="card">                
                 <div class="card-body">
-                    <img src="img/i1.jfif" alt="">
-                <p class="card-text"><?php echo $row['nombre'] ?></p> 
+
+                    <img class="" src=" <?php echo $row['imagen']; ?>" alt="Card image cap" width="25%" height="25%">
+                    <p><b>Autor: </b></p>
+                    <p class="card-text"><?php echo $row['nombre'] ?></p> 
                     <p class="card-text"><?php echo $row['apellido']; ?></p>
-                   
-                    <a href="#" class="btn btn-primary">Ver articulos</a>
+                    <p><b>Categoria:</b></p>
+                    <p class="card-text"><?php echo $row['categoria']; ?></p>
+                    <p><b>Sub categoria:</b></p>
+                    <p class="card-text"><?php echo $row['subcategoria']; ?></p>
+
+                    <a href="verArticulos.php" class="btn btn-primary">Ver articulo</a>
                 </div>
 
             </div>
