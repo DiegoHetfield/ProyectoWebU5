@@ -36,8 +36,9 @@
 
 <body>
     
+    
     <div class="text-center">
-            <h1 aling="center"><b><i>CONOCE NUESTROS ESCRITORES</i></b></h1>            
+            <h1 style="color:#0000FF" aling="center"><i>CONOCE NUESTROS ESCRITORES</i></h1>            
             <hr class="my-4">
     </div>
 
