@@ -1,10 +1,10 @@
- <!--HEADER-->
+  <!--HEADER-->
 <?php include("./head_foot/header.php")?>   
 
 
 <?php    
     
-    $nombre = $_SESSION['usuario'];    
+   // $nombre = $_SESSION['usuario'];    
     $servidor = "localhost";
     $usuarioBD = "root";
     $pwdBD = "xd";
@@ -22,7 +22,7 @@
 <html lang="es">
 
 <head>
-    <title>ESCRITORES</title>
+    <title>eco-tec</title>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,12 +53,9 @@
                 <div class="card-body">
 
                     <img class="" src=" <?php echo $row['imagen']; ?>" alt="Card image cap" width="25%" height="25%">
-                    <p><b>Autor: </b></p>
                     <p class="card-text"><?php echo $row['nombre'] ?></p> 
                     <p class="card-text"><?php echo $row['apellido']; ?></p>
-                    <p><b>Categoria:</b></p>
                     <p class="card-text"><?php echo $row['categoria']; ?></p>
-                    <p><b>Sub categoria:</b></p>
                     <p class="card-text"><?php echo $row['subcategoria']; ?></p>
 
                     <a href="verArticulos.php" class="btn btn-primary">Ver articulo</a>
