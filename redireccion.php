@@ -4,7 +4,7 @@ $contraseña = $_POST['contraseña'];
 
 $servidor = "localhost";
 $usuarioBD = "root";
-$pwdBD = "";
+$pwdBD = "xd";
 $nomBD = "proyectowebu5";
 
 $db = mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
