@@ -15,7 +15,7 @@
               no podemos olvidarnos de las razones por las que son tan significativos los productos y
               servicios responsabilizados con el medio ambiente: las actividades del ser humano generan
               una huella ambiental.</p>
-            <a href="listado.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
+            <a href="ver.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
           </div>
         </div>
         <div class="swiper-slide dark-layer">
@@ -26,7 +26,7 @@
               asumir un papel más activo en este sentido. Es necesario desplegar todos los recursos
               que estén a nuestro alcance para frenar desafíos como el cambio climático, la escasez
               de recursos naturales y la contaminación.</p>
-            <a href="listado.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
+            <a href="ver.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
           </div>
         </div>
         <div class="swiper-slide dark-layer">
@@ -36,7 +36,7 @@
             <p>Bien empleada, la tecnología puede convertirse en el gran aliado de la conservación
               del medioambiente. De hecho, cada vez son más los y las profesionales de diversos
               campos de la ciencia que se especializan en el diseño de soluciones específicas.</p>
-            <a href="listado.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
+            <a href="ver.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -46,7 +46,7 @@
             <p>El ser humano tiene el poder de preservar o destruir su entorno. Con el paso del
               tiempo hemos ido dejando en un segundo plano innovaciones que, tradicionalmente,
               nos han ayudado a mejorar nuestro día a día y que, también, ayudan al planeta.</p>
-            <a href="listado.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
+            <a href="ver.php" class="read-btn">Leer más<i class="uil uil-arrow-right"></i></a>
           </div>
         </div>
       </div>

@@ -1,9 +1,12 @@
   <!--HEADER-->
-<?php include("./head_foot/header.php")?>   
+  <?php include("./head_foot/header.php")?>   
 
+  <?php 
+  $id=($_GET['id']);
+    echo "$id";
+    ?> 
 
 <?php    
-    
    // $nombre = $_SESSION['usuario'];    
     $servidor = "localhost";
     $usuarioBD = "root";
@@ -11,10 +14,9 @@
     $nomBD = "proyectowebu5";    
     $db = new mysqli($servidor,$usuarioBD,$pwdBD,$nomBD);     
     $query = mysqli_query($db, "
-    select u.nombre, u.apellido,u.imagen,u.id_usuario, a.categoria, a.subcategoria 
-    from usuarios u join articulos a 
-    on u.id_usuario = a.id_usuario
-    where rol='escritor';");    
+    select categoria, subcategoria, contenido
+    from articulos  
+    where id_usuario='2';");    
     
 ?>
 
@@ -38,7 +40,7 @@
     
     
     <div class="text-center">
-            <h1 style="color:#0000FF" aling="center"><i>CONOCE NUESTROS ESCRITORES</i></h1>            
+            <h1 style="color:#0000FF" aling="center"><i>Ver Articulo</i></h1>            
             <hr class="my-4">
     </div>
 
@@ -53,20 +55,12 @@
             <div id="cartas" class="card">                
                 <div class="card-body">
 
-                    <img class="" src=" <?php echo $row['imagen']; ?>" alt="Card image cap" width="25%" height="25%">
-                    <p><b>Autor:</b></p>
-                    <p class="card-text"><?php echo $row['nombre'] ?></p> 
-                    <p class="card-text"><?php echo $row['apellido']; ?></p>
                     <p><b>categoria</b></p>
                     <p class="card-text"><?php echo $row['categoria']; ?></p>
                     <p><b>Subcategoria</b></p>
                     <p class="card-text"><?php echo $row['subcategoria']; ?></p>
-
-                    <?php $id=$row['id_usuario'] ;
-                    ?>      
-                    
-                    
-                    <a href="verArticulo.php?id="<?php echo $id?>>Ver articulo</a>
+                    <p><b>Contenido</b></p>
+                    <p class="card-text"><?php echo $row['contenido']; ?></p>
                    
                 </div>
 
