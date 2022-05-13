@@ -16,7 +16,7 @@
     $query = mysqli_query($db, "
     select categoria, subcategoria, contenido
     from articulos  
-    where id_usuario='2';");    
+    where id_usuario='.$id';");    
     
 ?>
 
